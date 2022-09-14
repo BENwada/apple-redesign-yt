@@ -2,7 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { SearchIcon } from "@heroicons/react/outline";
+import {
+  MagnifyingGlassIcon,
+  BriefcaseIcon,
+  UserIcon,
+} from "@heroicons/react/24/outline";
 
 const Header = () => {
   return (
@@ -34,7 +38,8 @@ const Header = () => {
         </a>
       </div>
       <div className="">
-        <SearchIcon className="headerLink" />
+        <MagnifyingGlassIcon className="headerIcon" />
+        <div></div>
       </div>
     </header>
   );
