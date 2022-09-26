@@ -14,7 +14,7 @@ const Product = ({ product }: Props) => {
           src={urlFor(product.image[0]).url()}
           layout="fill"
           objectFit="contain"
-          alt={urlFor(product.title)}
+          alt={product.title}
         />
       </div>
     </div>
