@@ -95,8 +95,8 @@ const Success = ({ products }: Props) => {
             <div className="space-y-2 pb-3">
               <p>Your order is confirmed</p>
               <p className="text-sm text-gray-600">
-                We've accepted your order, and we're getting it ready. Come back
-                to this page for updates on your shipment status.
+                We have accepted your order, and we are getting it ready. Come
+                back to this page for updates on your shipment status.
               </p>
             </div>
             <div className="pt-3 text-sm">
@@ -108,7 +108,7 @@ const Success = ({ products }: Props) => {
           </div>
           <div className="my-4 mx-4 space-y-2 rounded-md border border-gray-300 p-4 lg:ml-14">
             <p>Order updates</p>
-            <p>You'll get shipping and delivery updates by email and text.</p>
+            <p>You will get shipping and delivery updates by email and text.</p>
           </div>
           <div className="mx-4 flex flex-col items-center justify-between text-sm lg:ml-14 lg:flex-row">
             <p className="hidden lg:inline">Need help? Contact us</p>
