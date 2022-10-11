@@ -14,6 +14,7 @@ import Button from "../components/Button";
 import Currency from "react-currency-formatter";
 import { GetServerSideProps } from "next";
 import { fetchLineItems } from "../utils/fetchLineItems";
+import { useSession } from "next-auth/react";
 
 interface Props {
   products: StripeProduct[];
@@ -29,6 +30,8 @@ const Success = ({ products }: Props) => {
     (acc, product) => acc + product.price.unit_amount / 100,
     0
   );
+
+  const { data: session } = useSession();
 
   useEffect(() => {
     setMounted(true);
@@ -83,8 +86,8 @@ const Success = ({ products }: Props) => {
                 Order #{session_id?.slice(-5)}
               </p>
               <h4>
-                Thank you{""}
-                {/* {session ? session.user?.name?.split(" ")[0] : "Guest"} */}
+                Thank you{" "}
+                {session ? session.user?.name?.split(" ")[0] : "Guest"}
               </h4>
             </div>
           </div>
